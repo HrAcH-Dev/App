@@ -1,0 +1,12 @@
+.divs div {
+    @apply flex justify-center gap-[10px] items-center
+}
+
+.divs div h3 {
+    @apply text-[13px] leading-[18px] font-normal flex justify-center text-[#666666]
+}
+
+
+.items div {
+    @apply h-[3px] bg-[#008ECC] ml-[10px] mb-[6px]
+}
