@@ -20,7 +20,7 @@ export default function Header() {
                 </div>
                 <Image src={megaMartIcon} width={138} height={28} alt='headeicon' />
             </div>
-            <div className='hidden md:flex md:col-start-7 col-span-6 xl:col-span-5 col-start-5 bg-[#F3F9FB] h-[55px] items-center rounded-[10px] mt-[21px]'>
+            <div className='hidden md:flex md:col-start-6 col-span-7 xl:col-span-5 col-start-5 bg-[#F3F9FB] h-[55px] items-center rounded-[10px] mt-[21px]'>
               <div className='ml-[18px] flex w-full cursor-pointer pr-[16px]'>
                 <Image src={searchIcon} width={18} height={18} alt='headeicon' />
                 <input type="text" placeholder='Search essentials, groceries and more...' className='placeholder:text-[14px] placeholder:font-normal placeholder:leading-[18px] ml-[12px] bg-transparent w-full outline-none' />

@@ -3,6 +3,23 @@ import phone2Icon from '../../public/phone2-icon.svg'
 import phone3Icon from '../../public/phone3-icon.svg'
 import phone4Icon from '../../public/phone4-icon.svg'
 import phone5Icon from '../../public/phone5-icon.svg'
+import shop1Icon from '../../public/shop1-icon.svg'
+import shop2Icon from '../../public/shop2-icon.svg'
+import shop3Icon from '../../public/shop3-icon.svg'
+import shop4Icon from '../../public/shop4-icon.svg'
+import shop5Icon from '../../public/shop5-icon.svg'
+import shop6Icon from '../../public/shop6-icon.svg'
+import shop7Icon from '../../public/shop7-icon.svg'
+import appleFonIcon from '../../public/apple-fon-icon.svg'
+import appleIcon from '../../public/apple-icon.svg'
+import applePhoneIcon from '../../public/apple-phone-icon.svg'
+import realmeFonIcon from '../../public/realme-fon-icon.svg'
+import realmeIcon from '../../public/realme-icon.svg'
+import realmePhoneIcon from '../../public/realme-phone-icon.svg'
+import xiaomiIcon from '../../public/xiaomi-icon.svg'
+import xiaomiFonIcon from '../../public/xiaomi-fon-icon.svg'
+import xiaomiPhoneIcon from '../../public/xiaomi-phone-icon.svg'
+
 
 export const FILTER_DATA = [
     {
@@ -125,4 +142,93 @@ export const PROD_DATA = [
         lastPrice: '₹85999',
         savePrice: 'Save - ₹18000'
     }
+]
+
+export const SHOP_DATA = [
+    {
+        id: 1,
+        url: shop1Icon,
+        title: 'Mobile'
+    },
+    {
+        id: 2,
+        url: shop2Icon,
+        title: 'Cosmetics'
+    },
+    {
+        id: 3,
+        url: shop3Icon,
+        title: 'Electronics'
+    },
+    {
+        id: 4,
+        url: shop4Icon,
+        title: 'Furniture'
+    },
+    {
+        id: 5,
+        url: shop5Icon,
+        title: 'Watches'
+    },
+    {
+        id: 6,
+        url: shop6Icon,
+        title: 'Decor'
+    },
+    {
+        id: 7,
+        url: shop7Icon,
+        title: 'Accessories'
+    }
+]
+
+export const BRANDS_DATA = [
+    {
+        id: 1,
+        logoTitle: 'IPHONE',
+        fonImg: appleFonIcon,
+        logo: appleIcon,
+        url: applePhoneIcon,
+        title: 'UP to 80% OFF'
+    },
+    {
+        id: 2,
+        logoTitle: 'REALME',
+        fonImg: realmeFonIcon,
+        logo: realmeIcon,
+        url: realmePhoneIcon,
+        title: 'UP to 80% OFF'
+    },
+    {
+        id: 3,
+        logoTitle: 'XIAOMI',
+        fonImg: xiaomiFonIcon,
+        logo: xiaomiIcon,
+        url: xiaomiPhoneIcon,
+        title: 'UP to 80% OFF'
+    },
+    {
+        id: 4,
+        logoTitle: 'IPHONE',
+        fonImg: appleFonIcon,
+        logo: appleIcon,
+        url: applePhoneIcon,
+        title: 'UP to 80% OFF'
+    },
+    {
+        id: 5,
+        logoTitle: 'REALME',
+        fonImg: realmeFonIcon,
+        logo: realmeIcon,
+        url: realmePhoneIcon,
+        title: 'UP to 80% OFF'
+    },
+    {
+        id: 6,
+        logoTitle: 'XIAOMI',
+        fonImg: xiaomiFonIcon,
+        logo: xiaomiIcon,
+        url: xiaomiPhoneIcon,
+        title: 'UP to 80% OFF'
+    },
 ]

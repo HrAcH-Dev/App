@@ -1,6 +1,8 @@
 import React from 'react'
+import Brands from './components/Brands'
 import FilterItems from './components/FilterItems'
 import Product from './components/Product'
+import Shop from './components/Shop'
 import Slider from './components/Slider'
 
 export default function Home() {
@@ -9,6 +11,8 @@ export default function Home() {
       <FilterItems />
       <Slider />
       <Product />
+      <Shop />
+      <Brands />
     </div>
   )
 }

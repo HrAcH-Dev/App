@@ -36,7 +36,7 @@ export default function Product() {
                                 <h3 className='mb-[10px]'>{elem.title}</h3>
                                 <h3 className='mb-[10px]'><b className='mr-[10px]'>{elem.price}</b>{elem.lastPrice}</h3>
                                 <div className='w-[94%] h-[2px] bg-[#EDEDED] mb-[10px]' />
-                                <h3 className='text-[#249B3E]'>{elem.savePrice}</h3>
+                                <h3 className='text-[#249B3E] mb-[50px] md:mb-0'>{elem.savePrice}</h3>
                             </div>
                         </div>
                     )
