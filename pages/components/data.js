@@ -185,6 +185,8 @@ export const SHOP_DATA = [
 export const BRANDS_DATA = [
     {
         id: 1,
+        fonColor: '#494949',
+        class: '#313131',
         logoTitle: 'IPHONE',
         fonImg: appleFonIcon,
         logo: appleIcon,
@@ -193,6 +195,8 @@ export const BRANDS_DATA = [
     },
     {
         id: 2,
+        fontColor: '#F6DE8D',
+        class: '#FFF3CC',
         logoTitle: 'REALME',
         fonImg: realmeFonIcon,
         logo: realmeIcon,
@@ -201,6 +205,8 @@ export const BRANDS_DATA = [
     },
     {
         id: 3,
+        fontColor: '#FFD1B0',
+        class: '#FFECDF',
         logoTitle: 'XIAOMI',
         fonImg: xiaomiFonIcon,
         logo: xiaomiIcon,
@@ -209,6 +215,7 @@ export const BRANDS_DATA = [
     },
     {
         id: 4,
+        class: '#313131',
         logoTitle: 'IPHONE',
         fonImg: appleFonIcon,
         logo: appleIcon,
@@ -217,6 +224,7 @@ export const BRANDS_DATA = [
     },
     {
         id: 5,
+        class: '#FFF3CC',
         logoTitle: 'REALME',
         fonImg: realmeFonIcon,
         logo: realmeIcon,
@@ -225,6 +233,7 @@ export const BRANDS_DATA = [
     },
     {
         id: 6,
+        class: '#FFECDF',
         logoTitle: 'XIAOMI',
         fonImg: xiaomiFonIcon,
         logo: xiaomiIcon,
