@@ -58,7 +58,7 @@ export default function Slider() {
                             </div>
                         )
                     })}
-                    <div className='absolute left-[16%] md:left-[6.6%] bottom-[14%] z-50 flex justify-center gap-[7px]'>
+                    <div className='absolute left-[8%] md:left-[6.6%] bottom-[14%] z-50 flex justify-center gap-[7px]'>
                         {SLIDER_DATA.map((elem,index) => {
                             return (
                                 <div className={`${active === index ? 'w-[30px]' : 'w-[8px]'} cursor-pointer transition-all duration-300 bg-white rounded-full w-[8px] h-[8px]`} key={elem.id} onClick={() => handleDots(index)} />
@@ -66,14 +66,14 @@ export default function Slider() {
                         })}
                     </div>
                 </div>
-                <div className='absolute -left-[4.50%] top-[35%] md:top-[29%] w-[80px] h-[80px] md:w-[120px] md:h-[120px] bg-white rounded-full flex justify-center items-center'>
+                <div className='hidden md:flex absolute -left-[4.50%] top-[35%] md:top-[29%] w-[80px] h-[80px] md:w-[120px] md:h-[120px] bg-white rounded-full justify-center items-center'>
                     <button className='w-[43px] h-[43px] md:w-[86px] md:h-[86px] bg-[#F3F9FB] rounded-full flex justify-center items-center cursor-pointer' onClick={handlePrev}>
                         <span>
                             <Image src={arrowRight} width={24} height={24} alt='icon' />
                         </span>
                     </button>
                 </div>
-                <div className='absolute -right-[4.50%] top-[35%] md:top-[29%] w-[80px] h-[80px] md:w-[120px] md:h-[120px] bg-white rounded-full flex justify-center items-center'>
+                <div className='hidden md:flex absolute -right-[4.50%] top-[35%] md:top-[29%] w-[80px] h-[80px] md:w-[120px] md:h-[120px] bg-white rounded-full  justify-center items-center'>
                     <button className='w-[43px] h-[43px] md:w-[86px] md:h-[86px] bg-[#F3F9FB] rounded-full flex justify-center items-center cursor-pointer' onClick={handleNext}>
                         <span className='rotate-180'>
                             <Image src={arrowRight} width={24} height={24} alt='icon' />

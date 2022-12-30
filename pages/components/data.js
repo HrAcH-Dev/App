@@ -19,7 +19,16 @@ import realmePhoneIcon from '../../public/realme-phone-icon.svg'
 import xiaomiIcon from '../../public/xiaomi-icon.svg'
 import xiaomiFonIcon from '../../public/xiaomi-fon-icon.svg'
 import xiaomiPhoneIcon from '../../public/xiaomi-phone-icon.svg'
+import food1Icon from '../../public/food1-icon.svg'
+import food2Icon from '../../public/food2-icon.svg'
+import food3Icon from '../../public/food3-icon.svg'
+import food4Icon from '../../public/food4-icon.svg'
+import food5Icon from '../../public/food5-icon.svg'
+import food6Icon from '../../public/food6-icon.svg'
 
+export const FOOTER_LIST = ['Staples','Beverages','Personal Care ','Home Care','Baby Care','Vegetables & Fruits','Snacks & Foods','Dairy & Bakery']
+
+export const FOOTER_PAGES = ['About Us','Terms & Conditions','FAQ','Privacy Policy','E-waste Policy','Cancellation & Return Policy']
 
 export const FILTER_DATA = [
     {
@@ -239,5 +248,44 @@ export const BRANDS_DATA = [
         logo: xiaomiIcon,
         url: xiaomiPhoneIcon,
         title: 'UP to 80% OFF'
+    },
+]
+
+export const FOOD_DATA = [
+    {
+        id: 1,
+        url: food1Icon,
+        title: 'Daily Essentials',
+        priceTitle: 'UP to 50% OFF'
+    },
+    {
+        id: 2,
+        url: food2Icon,
+        title: 'Vegitables',
+        priceTitle: 'UP to 50% OFF'
+    },
+    {
+        id: 3,
+        url: food3Icon,
+        title: 'Fruits',
+        priceTitle: 'UP to 50% OFF'
+    },
+    {
+        id: 4,
+        url: food4Icon,
+        title: 'Strowberry',
+        priceTitle: 'UP to 50% OFF'
+    },
+    {
+        id: 5,
+        url: food5Icon,
+        title: 'Mango',
+        priceTitle: 'UP to 50% OFF'
+    },
+    {
+        id: 6,
+        url: food6Icon,
+        title: 'Cherry',
+        priceTitle: 'UP to 50% OFF'
     },
 ]

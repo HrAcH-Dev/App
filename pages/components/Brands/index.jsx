@@ -1,10 +1,11 @@
-import React, { useState, useRef, use } from 'react'
+import React, { useState, useRef, use, useEffect } from 'react'
 import Container from '../shared/Container'
 import { BRANDS_DATA } from '../data'
 import styles from '../../../styles/styles.module.scss'
 import Image from 'next/image'
 
 export default function Brands() {
+  const [show, setShow] = useState(true)
   const [active, setActive] = useState(0)
   const slideRef = useRef(null)
 
@@ -22,14 +23,29 @@ export default function Brands() {
     setActive(id)
   }
 
-  console.log(active);
+  useEffect(() => {
+    const handleShow = () => {
+        if(window.outerWidth <= 770) {
+            setShow(false)
+        }else {
+            setShow(true)
+        }
+    }
+
+    window.addEventListener('resize', handleShow)
+    return () => window.removeEventListener('resize', handleShow)
+  }, [])
+
+  console.log(show)
 
   return (
-    <div className='mt-[120px] mb-[158px]'>
+    <>
+        {show &&
+        <div className='mt-[120px]'>
         <Container>
             <div className='col-span-full'>
                 <div className='w-full'>
-                    <div className={`w-full h-[210px] rounded-[26px] gap-[16px] scroll-smooth overflow-x-scroll flex snap-mandatory snap-x ${styles.scroll}`} ref={slideRef}>
+                    <div className={`w-full rounded-[26px] gap-[16px] scroll-smooth overflow-x-scroll flex snap-mandatory snap-x ${styles.scroll}`} ref={slideRef}>
                         {BRANDS_DATA.map((elem,index) => {
                             return (
                                 <div className={`text-black break-words w-[32.4%] shrink-0 text-white flex justify-between gap-[20px] rounded-[26px]`} style={{backgroundColor: `${elem.class}`}} key={elem.id}>
@@ -38,7 +54,7 @@ export default function Brands() {
                                             <p className={`text-[14px] font-normal leading-[17px] tracking-[0.1em]`}>{elem.logoTitle}</p>
                                         </div>
                                         <Image src={elem.logo} />
-                                        <h1 className={`${index === 0 || index === 3 ? 'text-white' : 'text-black'} mt-[20px] text-[24px] font-semibold leading-[30px]`}>{elem.title}</h1>
+                                        <h1 className={`${index === 0 || index === 3 ? 'text-white' : 'text-black'} mb-[20px] mt-[20px] text-[24px] font-semibold leading-[30px]`}>{elem.title}</h1>
                                     </div> 
                                     <div className='relative'>
                                         <Image src={elem.fonImg} />
@@ -60,6 +76,7 @@ export default function Brands() {
                 </div>
             </div>
         </Container>
-    </div>
+    </div>}
+    </>
   )
 }
